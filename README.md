@@ -9,7 +9,7 @@ bash download_dataset.sh
 ```
 
 ### Iterative pruning for Bert-base
-```base 
+```bash
 python run_squad.py --pruner_name PLATON \
 --initial_threshold 1 --final_threshold 0.10 \
 --warmup_steps 5400 --initial_warmup 1 --final_warmup 5 \
@@ -39,7 +39,7 @@ python run_squad.py --pruner_name PLATON \
 --output_dir log/deberta-v3-base/PLATON/ --overwrite_output_dir
 ```
 
-### Comment
+### Instructions
 
 #### Hyperparameter Setup
 
@@ -49,3 +49,20 @@ python run_squad.py --pruner_name PLATON \
 + final warmup steps for pruning is equal to `final_warmup` $\times$ `warmup_steps`. 
 + `beta1`: $\beta_1$ for PLATON. 
 + `beta2`: $\beta_2$ for PLATON. 
+
+#### Other Comment
+
++ Thanks for checking our repo. The source code of GLUE will be relased within one week. 
+
+
+### Citation
+```
+@inproceedings{zhang2022platon,
+  title={PLATON: Pruning Large Transformer Models with Upper Confidence Bound of Weight Importance},
+  author={Zhang, Qingru and Zuo, Simiao and Liang, Chen and Bukharin, Alexander and He, Pengcheng and Chen, Weizhu and Zhao, Tuo},
+  booktitle={International Conference on Machine Learning},
+  pages={26809--26823},
+  year={2022},
+  organization={PMLR}
+}
+```
