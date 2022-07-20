@@ -1,6 +1,6 @@
 ## PLATON for Question Answering Task
 
-This pytorch package implements (PLATON: Pruning Large Transformer Models with Upper Confidence Bound of Weight Importance)[https://arxiv.org/pdf/2206.12562.pdf] (ICML 2022).
+This pytorch package implements [PLATON: Pruning Large Transformer Models with Upper Confidence Bound of Weight Importance](https://arxiv.org/pdf/2206.12562.pdf) (ICML 2022).
 
 ### Setup
 ```bash
