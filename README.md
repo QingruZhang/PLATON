@@ -1,4 +1,4 @@
-## PLATON Implementation
+## PLATON: Pruning Large Transformer Models with Upper Confidence Bound of Weight Importance
 
 This pytorch package implements [PLATON: Pruning Large Transformer Models with Upper Confidence Bound of Weight Importance](https://arxiv.org/pdf/2206.12562.pdf) (ICML 2022).
 
@@ -33,7 +33,7 @@ PLATON = Pruner(model, args=args, total_step=t_total, pruner_name="PLATON",
 + `args.deltaT`: the length of local average window. 
 + `mask_param_name`: the list of substrings of names of pruned parameters. 
 
-* After each step of `optimizer.step()`, add the following line to update $\oveline{I}$, $\overline{U}$ and prune the model iteratively. 
+* After each step of `optimizer.step()`, add the following line to update $\overline{I}$, $\overline{U}$ and prune the model iteratively. 
 ```
 threshold, mask_threshold = PLATON.update_and_pruning(model, global_step)
 ```
