@@ -18,7 +18,7 @@ from Pruner import Pruner
 ```
 * Initialize the pruner: 
 ```
-PLATON = Pruner(model, args=args, total_step=t_total, pruner_name="PLATON", 
+PLATON = Pruner(model, args=args, pruner_name="PLATON", total_step=t_total, 
 		mask_param_name=['attention.self', 'attention.output.dense', 'output.dense', 'intermediate.dense'])
 ```
 
