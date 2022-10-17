@@ -19,8 +19,7 @@ from Pruner import Pruner
 * Initialize the pruner: 
 ```
 PLATON = Pruner(model, args=args, total_step=t_total, pruner_name="PLATON", 
-				mask_param_name=['attention.self', 'attention.output.dense', \
-				'output.dense', 'intermediate.dense'])
+		mask_param_name=['attention.self', 'attention.output.dense', 'output.dense', 'intermediate.dense'])
 ```
 
 + `model`: the model to be pruned. 
