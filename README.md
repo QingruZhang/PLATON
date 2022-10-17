@@ -58,7 +58,7 @@ python train.py \
 --output_dir log/run --log_file log.log --tensorboard 
 ```
 
-Please see `GLUE/scripts` for more examples of GLUE. 
+Please see [`GLUE/scripts`](https://github.com/QingruZhang/PLATON/tree/main/GLUE/scripts) for more examples of GLUE. 
 
 
 ### Question Answering Task
